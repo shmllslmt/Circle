@@ -10,8 +10,7 @@ public class Main {
         Circle circle3 = new Circle(125.0);
 
         System.out.println("Circle 1");
-        System.out.println("Area: " + circle1.getArea());
-        System.out.println("Perimeter: " + circle1.getPerimeter());
+        circle1.printCircle();
 
         System.out.println("Circle 2");
         System.out.println("Area: " + circle2.getArea());

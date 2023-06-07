@@ -27,4 +27,20 @@ public class Circle {
     public static int getNumOfCircle() {
         return numOfCircle;
     }
+
+    @Override
+    public String toString() {
+        String temp;
+
+        temp = "Radius: " + this.radius + "\nArea: " + this.getArea() + "\nPerimeter: " + this.getPerimeter();
+
+        return temp;
+    }
+
+    public void printCircle() {
+        System.out.println("Radius: " + this.radius);
+        System.out.println("Area: " + String.format("%.2f", this.getArea()));
+        System.out.println("Perimeter: " + String.format("%.2f", this.getPerimeter()));
+        System.out.printf("");
+    }
 }
