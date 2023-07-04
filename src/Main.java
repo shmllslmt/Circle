@@ -5,7 +5,6 @@ public class Main {
         Circle circle1 = new Circle(1.0);
 
         Circle circle2 = new Circle();
-        circle2.setRadius(25.0);
 
         Circle circle3 = new Circle(125.0);
 
@@ -33,5 +32,8 @@ public class Main {
         }
 
         System.out.println("\nTotal Number of Circle Objects: " + Circle.getNumOfCircle());
+
+        Cylinder cylinder = new Cylinder();
+        System.out.println(cylinder.getArea());
     }
 }

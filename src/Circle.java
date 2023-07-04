@@ -1,8 +1,10 @@
+// Immutable class
 public class Circle {
     private double radius;
     private static int numOfCircle = 0;
 
     // no-arg constructor
+
     Circle() {
         this(1.0);
     }
@@ -12,16 +14,18 @@ public class Circle {
         numOfCircle++;
     }
 
+    // helper / task method
     double getArea() {
         return Math.PI * this.radius * this.radius;
     }
 
+    // helper / task method
     double getPerimeter() {
         return 2 * Math.PI * this.radius;
     }
-
-    public void setRadius(double radius) {
-        this.radius = radius;
+    //getter or accessor method
+    public double getRadius() {
+        return radius;
     }
 
     public static int getNumOfCircle() {
@@ -29,6 +33,7 @@ public class Circle {
     }
 
     @Override
+    // Overriding the toString method in the original java.lang.object class
     public String toString() {
         String temp;
 
